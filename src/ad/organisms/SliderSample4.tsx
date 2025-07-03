@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Slider, Stack, Typography } from "@mui/material";
+import { Slider, Stack } from "@mui/material";
 import { FilenamePanel } from "../atoms/FilenamePanel";
 
 export const SliderSample4 = () => {

@@ -8,7 +8,9 @@ interface StyledSliderProps extends SliderProps {
   success?: boolean;
 }
 
+// @ts-expect-error: 取り敢えず
 const StyledSlider = styled(Slider, {
+  // @ts-expect-error: 取り敢えず
   state: (prop) => prop !== "success",
 })<StyledSliderProps>(({ success, theme }) => ({
   width: 300,
@@ -55,7 +57,9 @@ export const CustomizeSample5 = () => {
 
       <Box>
         <FormControlLabel
-          control={<Switch checked={checked} onChange={() => setChecked(!checked)} />}
+          control={
+            <Switch checked={checked} onChange={() => setChecked(!checked)} />
+          }
           label="スタイルの上書き"
         />
         <StyledSlider success={checked} defaultValue={30} />

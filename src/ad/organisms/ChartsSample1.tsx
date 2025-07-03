@@ -64,7 +64,9 @@ export const ChartsSample1 = () => {
             label: "月", // x軸(横軸)のラベル
             // barGapRatio: 0.2, // NOTE: バーのの間隔 エラーになる・・・
             // categoryGapRatio: 0.1, // NOTE: バーの太さ エラーになる・・・
-            valueFormatter: (month, ctx) => {
+
+            // valueFormatter: (month, ctx) => {
+            valueFormatter: (month) => {
               // console.log(ctx); // 表示されている場所
               // console.log(month); // x軸の値
               return `${month}月`; // x軸のラベルを修正出来る
@@ -89,10 +91,15 @@ export const ChartsSample1 = () => {
             label: "北海道",
             valueFormatter: getFormattedValue,
           },
-          { dataKey: "tokyo", label: "東京", valueFormatter: getFormattedValue },
+          {
+            dataKey: "tokyo",
+            label: "東京",
+            valueFormatter: getFormattedValue,
+          },
         ]}
         grid={{ horizontal: true, vertical: true }} // グリッドを表示
-        barLabel={(item, ctx) => {
+        // barLabel={(item, ctx) => {
+        barLabel={(item) => {
           // console.log(item); // バーの値の情報
           // console.log(ctx); // バーのレンダリグの情報 高さとか、幅とか
           return item?.value?.toLocaleString();

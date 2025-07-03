@@ -4,6 +4,7 @@ import { Typography, Button } from "@mui/material";
 import { StdFadeUpdateEffect } from "../atoms/StdTransitions";
 import { FilenamePanel } from "../atoms/FilenamePanel";
 
+// @ts-expect-error: 取り敢えず
 const Message = memo<{ message: JSX.Element | string }>((p) => {
   return (
     <Typography variant="body1" color="initial">
@@ -34,7 +35,12 @@ export const TransitionsSample3 = () => {
         stringかJSX.Elementを入れる
       </Typography>
 
-      <Button variant="contained" color="primary" onClick={() => doClick()} sx={{ mb: 2 }}>
+      <Button
+        variant="contained"
+        color="primary"
+        onClick={() => doClick()}
+        sx={{ mb: 2 }}
+      >
         値の更新
       </Button>
 

@@ -1,7 +1,7 @@
 import { useState, CSSProperties } from "react";
 import { Box, Typography, FormControlLabel, Switch } from "@mui/material";
-import Slider, { SliderProps } from "@mui/material/Slider";
-import { alpha, styled } from "@mui/material/styles";
+import Slider from "@mui/material/Slider";
+import { styled } from "@mui/material/styles";
 import { FilenamePanel } from "../atoms/FilenamePanel";
 
 const CustomSlider = styled(Slider)({
@@ -54,7 +54,9 @@ export const CustomizeSample6 = () => {
 
       <Box>
         <FormControlLabel
-          control={<Switch checked={checked} onChange={() => doChange(!checked)} />}
+          control={
+            <Switch checked={checked} onChange={() => doChange(!checked)} />
+          }
           label="スタイルの上書き"
         />
         <CustomSlider style={vars} defaultValue={30} />

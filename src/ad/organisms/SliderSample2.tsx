@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Slider, SliderProps, Stack, Typography, TextField } from "@mui/material";
+import { Slider, SliderProps, Stack, TextField } from "@mui/material";
 import { FilenamePanel } from "../atoms/FilenamePanel";
 
 const marks: SliderProps["marks"] = [
@@ -43,7 +43,12 @@ export const SliderSample2 = () => {
   };
   return (
     <>
-      <Stack direction="row" spacing={5} alignItems="center" sx={{ mt: 5,mb: 4 }}>
+      <Stack
+        direction="row"
+        spacing={5}
+        alignItems="center"
+        sx={{ mt: 5, mb: 4 }}
+      >
         <Slider
           value={value}
           onChange={(_, value) => doChange(value)}

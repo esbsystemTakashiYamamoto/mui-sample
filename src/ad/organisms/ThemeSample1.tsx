@@ -12,7 +12,7 @@ export const ThemeSample1 = () => {
           color="initial"
           sx={{ m: 2, p: 2, bgcolor: (p) => p.palette.grey[300] }}
         >
-          import {useTheme} from "@mui/material/styles"; // 読み込んで
+          import {"useTheme"} from "@mui/material/styles"; // 読み込んで
           <br />
           ....
           <br />

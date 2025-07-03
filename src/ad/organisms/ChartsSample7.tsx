@@ -3,7 +3,7 @@ import { Stack } from "@mui/material";
 import { SparkLineChart } from "@mui/x-charts/SparkLineChart";
 import { FilenamePanel } from "../atoms/FilenamePanel";
 
-const data = Array.from({ length: 30 }).map((_, i) => {
+const data = Array.from({ length: 30 }).map((_) => {
   return faker.number.int({ min: 10, max: 50 });
 });
 

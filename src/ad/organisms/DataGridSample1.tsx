@@ -61,7 +61,8 @@ const columns: GridColDef<(typeof rows)[number]>[] = [
     align: "center",
     headerAlign: "center",
     type: "string",
-    valueGetter: (value, row) => {
+    // valueGetter: (value, row) => {
+    valueGetter: (value) => {
       // console.log(value); // この列の値が取得できる
       // console.log(row); // この行の値がオブジェクトとして取得できる
       return value; // 単純な値しか返せないっぽい
@@ -88,7 +89,9 @@ const columns: GridColDef<(typeof rows)[number]>[] = [
             label={gender}
             sx={{
               bgcolor: (p) =>
-                "男性" === gender ? p.palette.primary.light : p.palette.error.light,
+                "男性" === gender
+                  ? p.palette.primary.light
+                  : p.palette.error.light,
             }}
           />
         </>
