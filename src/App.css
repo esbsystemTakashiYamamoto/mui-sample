@@ -1,0 +1,31 @@
+.wave1 {
+  animation: wave 5s linear reverse infinite;
+  background: linear-gradient(90deg,
+      #0f156e,
+      #8e99f3,
+      #0f156e,
+      #8e99f3,
+      #0f156e);
+  background-size: 200% 100%;
+}
+
+.wave2 {
+  animation: wave 5s linear reverse infinite;
+  background: linear-gradient(90deg,
+      #1976d2,
+      #54abf3,
+      #1976d2,
+      #54abf3,
+      #1976d2);
+  background-size: 200% 200%;
+}
+
+@keyframes wave {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
