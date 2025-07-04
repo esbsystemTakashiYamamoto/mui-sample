@@ -1,6 +1,6 @@
 # MUI Sample
 
-@import "/doc/image/mui.png" {width="100px"}
+<img src="/doc/image/mui.png" width="100px" >
 
 mui のサンプルプロジェクト
 
@@ -17,12 +17,15 @@ npm i --force
 
 強制インストール
 **"mui-image": "^1.0.7"** は MUI v5 までしか対応していない
+
 このリポジトリでは MUI v6 を使っている
 
 # [Material UI](https://mui.com/)
 
 基本的なコンポーネントで永遠に無料らしい
+
 基本的なコンポーネント郡
+
 と、いってもいろいろ出来るし慣れるまで大変
 
 ## [✅ App Bar](https://mui.com/material-ui/react-app-bar/)

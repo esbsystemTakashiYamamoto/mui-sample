@@ -10,7 +10,9 @@ export type TitleBarProps = {
 };
 
 // アプリケーションタイトルバー
-export const TitleBar = ({ label = import.meta.env.VITE_APP_NAME }: TitleBarProps) => {
+export const TitleBar = ({
+  label = import.meta.env.VITE_APP_NAME,
+}: TitleBarProps) => {
   const [menuOpen, setMenuOpen] = useState(false); // メニューバーの開閉状態
   const toggleDrawer = () => setMenuOpen((p) => !p); // メニューバーの開閉状態を反転
 
@@ -32,12 +34,18 @@ export const TitleBar = ({ label = import.meta.env.VITE_APP_NAME }: TitleBarProp
           </IconButton>
 
           {/* アプリケーション名 */}
-          <Typography variant="h4" sx={{ flexGrow: 1, fontFamily: "DotGothic16" }}>
+          <Typography
+            variant="h4"
+            sx={{ flexGrow: 1, fontFamily: "DotGothic16" }}
+          >
             {label}
           </Typography>
 
           {/* アプリケーションバージョン */}
-          <Typography variant="inherit" sx={{ fontFamily: "Sawarabi Gothic", mt: 3 }}>
+          <Typography
+            variant="inherit"
+            sx={{ fontFamily: "Sawarabi Gothic", mt: 3 }}
+          >
             ver: {APP_VERSION}
             <FilenamePanel fileName="TitleBar.tsx" />
           </Typography>

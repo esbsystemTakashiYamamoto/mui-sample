@@ -144,7 +144,7 @@ export const MenuBar = ({ label = "Menu", menuToggle = () => {} }: Props) => {
             <ListItemButton
               sx={{ pl: 4, height: MENU_ITEM_HEIGHT }}
               onClick={() => doChangeSelected(10, "/material-ui/dialog")}
-              selected={selected === 10}
+              selected={selected === 2}
             >
               <ListItemText
                 primary="Dialog"
@@ -158,7 +158,7 @@ export const MenuBar = ({ label = "Menu", menuToggle = () => {} }: Props) => {
             <ListItemButton
               sx={{ pl: 4, height: MENU_ITEM_HEIGHT }}
               onClick={() => doChangeSelected(4, "/material-ui/list")}
-              selected={selected === 4}
+              selected={selected === 3}
             >
               <ListItemText
                 primary="List"
@@ -172,7 +172,7 @@ export const MenuBar = ({ label = "Menu", menuToggle = () => {} }: Props) => {
             <ListItemButton
               sx={{ pl: 4, height: MENU_ITEM_HEIGHT }}
               onClick={() => doChangeSelected(7, "/material-ui/popover")}
-              selected={selected === 7}
+              selected={selected === 4}
             >
               <ListItemText
                 primary="PopOver"
@@ -186,7 +186,7 @@ export const MenuBar = ({ label = "Menu", menuToggle = () => {} }: Props) => {
             <ListItemButton
               sx={{ pl: 4, height: MENU_ITEM_HEIGHT }}
               onClick={() => doChangeSelected(3, "/material-ui/select")}
-              selected={selected === 3}
+              selected={selected === 5}
             >
               <ListItemText
                 primary="Select"
@@ -200,7 +200,7 @@ export const MenuBar = ({ label = "Menu", menuToggle = () => {} }: Props) => {
             <ListItemButton
               sx={{ pl: 4, height: MENU_ITEM_HEIGHT }}
               onClick={() => doChangeSelected(5, "/material-ui/slider")}
-              selected={selected === 5}
+              selected={selected === 6}
             >
               <ListItemText
                 primary="Slider"
@@ -214,7 +214,7 @@ export const MenuBar = ({ label = "Menu", menuToggle = () => {} }: Props) => {
             <ListItemButton
               sx={{ pl: 4, height: MENU_ITEM_HEIGHT }}
               onClick={() => doChangeSelected(9, "/material-ui/snackbar")}
-              selected={selected === 9}
+              selected={selected === 7}
             >
               <ListItemText
                 primary="SnackBar"
@@ -228,7 +228,7 @@ export const MenuBar = ({ label = "Menu", menuToggle = () => {} }: Props) => {
             <ListItemButton
               sx={{ pl: 4, height: MENU_ITEM_HEIGHT }}
               onClick={() => doChangeSelected(11, "/material-ui/speedDial")}
-              selected={selected === 11}
+              selected={selected === 8}
             >
               <ListItemText
                 primary="SpeedDial"
@@ -242,7 +242,7 @@ export const MenuBar = ({ label = "Menu", menuToggle = () => {} }: Props) => {
             <ListItemButton
               sx={{ pl: 4, height: MENU_ITEM_HEIGHT }}
               onClick={() => doChangeSelected(5, "/material-ui/switch")}
-              selected={selected === 5}
+              selected={selected === 9}
             >
               <ListItemText
                 primary="Switch"
@@ -256,7 +256,7 @@ export const MenuBar = ({ label = "Menu", menuToggle = () => {} }: Props) => {
             <ListItemButton
               sx={{ pl: 4, height: MENU_ITEM_HEIGHT }}
               onClick={() => doChangeSelected(31, "/material-ui/table")}
-              selected={selected === 31}
+              selected={selected === 10}
             >
               <ListItemText
                 primary="Table"
@@ -270,7 +270,7 @@ export const MenuBar = ({ label = "Menu", menuToggle = () => {} }: Props) => {
             <ListItemButton
               sx={{ pl: 4, height: MENU_ITEM_HEIGHT }}
               onClick={() => doChangeSelected(2, "/material-ui/textfield")}
-              selected={selected === 2}
+              selected={selected === 11}
             >
               <ListItemText
                 primary="TextField"
@@ -284,7 +284,7 @@ export const MenuBar = ({ label = "Menu", menuToggle = () => {} }: Props) => {
             <ListItemButton
               sx={{ pl: 4, height: MENU_ITEM_HEIGHT }}
               onClick={() => doChangeSelected(6, "/material-ui/toggleButton")}
-              selected={selected === 6}
+              selected={selected === 12}
             >
               <ListItemText
                 primary="ToggleButton"
@@ -298,7 +298,7 @@ export const MenuBar = ({ label = "Menu", menuToggle = () => {} }: Props) => {
             <ListItemButton
               sx={{ pl: 4, height: MENU_ITEM_HEIGHT }}
               onClick={() => doChangeSelected(8, "/material-ui/tooltip")}
-              selected={selected === 8}
+              selected={selected === 13}
             >
               <ListItemText
                 primary="ToolTip"
@@ -312,7 +312,7 @@ export const MenuBar = ({ label = "Menu", menuToggle = () => {} }: Props) => {
             <ListItemButton
               sx={{ pl: 4, height: MENU_ITEM_HEIGHT }}
               onClick={() => doChangeSelected(12, "/material-ui/Transitions")}
-              selected={selected === 12}
+              selected={selected === 14}
             >
               <ListItemText
                 primary="Transitions"
@@ -328,7 +328,7 @@ export const MenuBar = ({ label = "Menu", menuToggle = () => {} }: Props) => {
               onClick={() =>
                 doChangeSelected(13, "/material-ui/BackdropAndSnackbar")
               }
-              selected={selected === 13}
+              selected={selected === 15}
             >
               <ListItemText
                 primary="BackdropAndSnackbar"
